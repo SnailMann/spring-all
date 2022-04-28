@@ -19,12 +19,6 @@
         <spring.boot.version>2.6.7</spring.boot.version>
     </properties>
 
-    <modules>
-        <module>spring-websocket-demo</module>
-    </modules>
-
-
-
     <dependencies>
         <dependency>
             <groupId>org.projectlombok</groupId>
