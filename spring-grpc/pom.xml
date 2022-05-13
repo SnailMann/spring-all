@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.snailmann.me.spring</groupId>
+        <artifactId>spring-all</artifactId>
+        <version>1.0.0-SNAPSHOT</version>
+        <relativePath/>
+    </parent>
+    <groupId>com.snailmann.me.spring.grpc</groupId>
+    <artifactId>spring-grpc</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
+    <name>spring-grpc</name>
+    <description>spring-grpc</description>
+    <packaging>pom</packaging>
+
+    <modules>
+        <module>spring-grpc-client</module>
+        <module>spring-grpc-common</module>
+        <module>spring-grpc-server</module>
+    </modules>
+
+    <properties>
+        <net-devh-grpc.version>2.13.1.RELEASE</net-devh-grpc.version>
+    </properties>
+
+    <dependencyManagement>
+
+        <dependencies>
+<!--            <dependency>
+                <groupId>net.devh</groupId>
+                <artifactId>grpc-client-spring-boot-starter</artifactId>
+                <version>${net-devh-grpc.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>net.devh</groupId>
+                <artifactId>grpc-server-spring-boot-starter</artifactId>
+                <version>${net-devh-grpc.version}</version>
+            </dependency>-->
+            <dependency>
+                <groupId>com.snailmann.me.spring.grpc</groupId>
+                <artifactId>spring-grpc-common</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.grpc</groupId>
+                <artifactId>grpc-all</artifactId>
+                <version>1.46.0</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+</project>
